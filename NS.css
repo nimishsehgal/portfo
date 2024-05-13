@@ -1,0 +1,458 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white; /* Set default text color */
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+}
+
+.topnav a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #b7912a;
+  color: black;
+}
+
+.topnav a.active,
+.topnav a.active:hover {
+  background-color: gold;
+  color: black;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-section img {
+  max-width: 79%; /* Ensure image fits within its container */
+  margin-left: 60px;
+  margin-top: 20px;
+  height: 550px;
+  border-radius: 50px;
+}
+
+.right-section {
+  flex: 1;
+  padding-left: 10px;
+  padding-top: 20px;
+  text-align: center;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.right-section h1 {
+  color: rgb(235, 159, 19);
+  font-size: 65px;
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+
+.right-section h1 .small-font {
+  color: white;
+  word-spacing:2px;
+  font-size: 25px; /* Set font size for "Hi, I am" */
+}
+
+.right-section p {
+  font-size: 25px;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.right-section p:last-child {
+  font-size: 24px;
+  margin-top: 20px;
+  word-spacing: 4px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.connect-section {
+  text-align: center;
+  margin-top: 120px; /* Adjust margin as needed */
+}
+
+.connect-section h2 {
+  font-size: 29px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 9px; /* Adjust margin between icons as needed */
+}
+
+.social-icons img {
+  width: 32px; /* Adjust icon size as needed */
+}
+
+#about h1 {
+  font-size: 21px;
+  color: white;
+  margin-bottom: 1px;
+}
+#about h2 {
+  font-size: 36px;
+  color:#b7912a;
+  margin-top: 1px;
+}
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.snippet {
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  /* transition: border-color 0.3s; */
+  background-image: url('snippet.jpeg');
+  background-size: cover;
+}
+
+.snippet:hover {
+  border-color: #b7912a;
+}
+.snippet h3 {
+  font-size: 24px;
+  color: white;
+}
+
+.snippet-row .snippet:last-child {
+  height: 160px;
+}
+.snippet p {
+  font-size: 18px;
+  color: #817d7de2;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+.sec-head h1 {
+  font-size: 21px;
+  color: white;
+  margin-bottom: 1px;
+  text-align: center;
+}
+.sec-head h2 {
+  font-size: 36px;
+  color:#b7912a;
+  margin-top: 1px;
+  text-align: center;
+}
+.projects-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space;
+}
+
+.snipp-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.snipp-column .snipp:first-child {
+  margin-right: auto; /* Push the first snippet to the left */
+  margin-left: 130px;
+}
+
+.snipp-column .snipp:last-child {
+  margin-left: auto; /* Push the last snippet to the right */
+  margin-right: 130px;
+}
+
+.snipp {
+  height: 540px;
+  /* margin-bottom: 30px; */
+  border-radius: 20px;
+  /* border: 2px solid #ccc; */
+  padding: 20px;
+  /* transition: border-color 0.3s; */
+  background-image: url('snippet.jpeg');
+  background-size: cover;
+  width: 330px;
+}
+
+.project-image {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.image-container {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 15px; /* Add border-radius for curved outline */
+}
+
+.image-container img {
+  max-width: 500px; /* Set the maximum width of the image */
+  height: auto;
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.image-container:hover img {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.github-link {
+  text-align: center;
+  margin-top: 20px; /* Add some top margin */
+}
+
+.github-link a {
+  color: #d6a503; /* Set the link color */
+  text-decoration: none; /* Remove default underline */
+  padding: 8px 16px; /* Add padding to create button-like appearance */
+  border: 2px solid #8092a4; /* Add border */
+  border-radius: 4px; /* Add border-radius for rounded corners */
+  display: inline-block; /* Make the link a block element */
+  transition: background-color 0.3s, color 0.3s; /* Add transition for hover effect */
+}
+
+.github-link a:hover {
+  background-color: #0366d6; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+
+.snipp:hover {
+  border-color: #b7912a;
+}
+.snipp h3 {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.582);
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.snipp p {
+  font-size: 16px;
+  color: #817d7de2;
+  line-height: 1.6;
+}
+
+
+
+
+
+.sec-head h1 {
+  font-size: 21px;
+  color: white;
+  margin-bottom: 1px;
+  text-align: center;
+}
+.sec-head h2 {
+  font-size: 36px;
+  color:#b7912a;
+  margin-top: 1px;
+  text-align: center;
+}
+.skills-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space;
+}
+
+.sni-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.sni-column .sni:first-child {
+  margin-right: auto; /* Push the first snippet to the left */
+  margin-left: 130px;
+}
+
+.sni-column .sni:last-child {
+  margin-left: auto; /* Push the last snippet to the right */
+  margin-right: 130px;
+}
+
+.sni {
+  height: 580px;
+  border-radius: 20px;
+  border: 2px solid #0c0c0c; 
+  padding: 20px;
+  background-image: url('snippet.jpeg');
+  background-size: cover;
+  width: 330px;
+}
+
+.sni h3 {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.582);
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.sni p {
+  font-size: 16px;
+  color: #817d7de2;
+  line-height: 1.6;
+}
+
+.sni:hover {
+  border-color: #b7912a; /* Add golden outline */
+}
+
+.icon-and-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.icon-and-name img {
+  width: 50px; /* Adjust the width of the icon image */
+  height: 50px;
+
+}
+
+.icon-and-name p {
+  font-size: 21px; /* Adjust the font size of the language name */
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+
+#achievements{
+  scroll-margin-top: 0px;
+}
+
+.se-head h1 {
+  /* padding-top: 10px; */
+  font-size: 21px;
+  color: white;
+  margin-bottom: 1px;
+  text-align: center;
+}
+.se-head h2 {
+  font-size: 36px;
+  color:#b7912a;
+  margin-top: 1px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.achievements-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space;
+}
+
+.snippo-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 120px;
+}
+
+.snippo {
+  height: 400px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  /* transition: border-color 0.3s; */
+  background-image: url('snippet.jpeg');
+  background-size: cover;
+  width: 420px;
+}
+
+.snippo:hover {
+  border-color: #b7912a;
+}
+.snippo h3 {
+  margin-top: 5px;
+  font-size: 26px;
+  color: white;
+  text-align: center;
+}
+
+.snippo ul {
+  font-size: 18px;
+  color: #aaa7a7e2;
+  line-height: 1.7;
+}
+
+
+
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-image: url('snippet.jpeg');
+  background-size: cover;
+  color: white;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  background-color: #b7912a;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: gold;
+}
+
